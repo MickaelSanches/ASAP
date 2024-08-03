@@ -13,10 +13,11 @@ export default {
         norms: ['"TT Norms"', 'sans-serif'],
       },
       colors: {
-        noir: '#000000',
-        violet: '#450A28',
-        rose: '#CD0066',
-        marron: '#3D3436',
+        'noir': '#000000',
+        'violet': '#450A28',
+        'rose': '#CD0066',
+        'marron': '#3D3436',
+        'noir-footer': '#000000',
       },
       screens: {
         'xs': '480px',
