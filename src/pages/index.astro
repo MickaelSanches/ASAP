@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.jsx';
 import Carousel from '../components/Carousel.jsx';
+import History from '../components/History.jsx';
+import LogosCarousel from '../components/LogosCarousel.jsx';
 import Footer from '../components/Footer.jsx';
 ---
 
@@ -9,13 +11,13 @@ import Footer from '../components/Footer.jsx';
 	<Header client:load />
 	<main class="space-y-8">
 		<section>
-			<Carousel images={['', '', '']} />
+			<Carousel images={['/img/test.png', '/img/test1.png', '/img/test2.png']} />
 		</section>
 		<section>
-
+			<History />
 		</section>
 		<section>
-
+			<LogosCarousel logos={['', '', '']} />
 		</section>
 		<section>
 

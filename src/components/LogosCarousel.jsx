@@ -14,7 +14,7 @@ const LogosCarousel = ({ logos }) => {
   }, []);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden my-12">
       <div className="flex" ref={carouselRef}>
         {logos.map((logo, index) => (
           <img key={index} src={logo} alt={`Logo ${index}`} className="w-32 h-32 object-contain mx-2" />
