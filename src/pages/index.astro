@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.jsx';
+import Carousel from '../components/Carousel.jsx';
+import Footer from '../components/Footer.jsx';
+---
+
+<BaseLayout>
+	<Header client:load />
+	<main class="space-y-8">
+		<section>
+			<Carousel images={['', '', '']} />
+		</section>
+		<section>
+
+		</section>
+		<section>
+
+		</section>
+		<section>
+
+		</section>
+
+	</main>
+	<Footer />
+</BaseLayout>

@@ -1,0 +1,67 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <link 
+	rel="icon" 
+	type="image/png" 
+	href="/img/logo.webp" />
+    <meta 
+	name="viewport" 
+	content="width=device-width" />
+    <meta 
+	name="generator" 
+	content={Astro.generator} />
+    <meta 
+	name="description" 
+	content="ASAP (Alpes Solutions Auto Pro)" />
+    <meta 
+	name="robots" 
+	content="index, follow" />
+    <meta 
+	property="og:type" 
+	content="website" />
+    <meta 
+	property="og:url" 
+	content="" />
+	<meta 
+	property="og:image" 
+	content="/img/logo.webp" />
+    <meta 
+	property="og:site_name" 
+	content="ASAP" />
+    <meta 
+	property="og:title" 
+	content="ASAP" />
+	<meta 
+	property="og:description" 
+	content="" />
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+	
+    <script 
+	is:inline 
+	src="https://kit.fontawesome.com/2898a0ac51.js" 
+	crossorigin="anonymous"></script>
+    <title>ASAP | Alpes Solutions Auto Pro</title>
+    <!-- <link 
+	rel="stylesheet" 
+	href="/scripts/cursor.js">
+    <script 
+	defer src="/scripts/cursor.js"></script> -->
+</head>
+<body class="font-norms text-noir bg-grey">
+	<!-- <Popup client:load/> -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+	<!-- <CookieBanner client:load /> -->
+    <slot />
+	<!-- <BackToTop client:load /> -->
+	<!-- <script is:inline defer src="/scripts/cursor.js"></script> -->
+</body>
+</html>
