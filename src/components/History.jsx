@@ -9,6 +9,7 @@ const History = () => {
       />
       <div className="relative flex flex-col md:flex-row items-center bg-[#121017] p-6 md:p-12 rounded-3xl w-full max-w-[650px] space-y-8 md:space-y-0 md:space-x-8">
         <img
+          loading="lazy"
           src="/img/histoire.webp"
           alt="Image de l'histoire"
           className="-ml-16 mr-8 w-full max-w-[250px] h-auto md:w-[35vw] md:max-w-[280px] object-cover rounded-3xl shadow-lg"

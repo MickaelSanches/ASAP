@@ -4,6 +4,7 @@ const NotFound = () => {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen bg-[#121017] text-[#fdfcfd]">
       <div 
+        loading="lazy"
         className="absolute inset-0 bg-cover bg-center opacity-20" 
         style={{ backgroundImage: "url('/img/logoviolet.webp')" }}
       />
