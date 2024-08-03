@@ -19,17 +19,17 @@ const Footer = () => {
             <ul>
             <li>
                 <a href="" className="hover:text-rose">
-                <img src="" loading="lazy" alt="Instagram" className="w-8 h-8 mx-auto md:mx-0" /> Instagram
+                <img src="/icon/instagram.webp" loading="lazy" alt="Instagram" className="w-5 h-5 mx-auto md:mx-0" /> Instagram
                 </a>
             </li>
             <li>
                 <a href="" className="hover:text-rose">
-                <img src="" loading="lazy" alt="Facebook" className="w-8 h-8 mx-auto md:mx-0" /> Facebook
+                <img src="/icon/facebook.webp" loading="lazy" alt="Facebook" className="w-5 h-5 mx-auto md:mx-0" /> Facebook
                 </a>
             </li>
             <li>
                 <a href="" className="hover:text-rose">
-                <img src="" loading="lazy" alt="TikTok" className="w-8 h-8 mx-auto md:mx-0" /> TikTok
+                <img src="/icon/linkedin.webp" loading="lazy" alt="LinkedIn" className="w-5 h-5 mx-auto md:mx-0" /> LinkedIn
                 </a>
             </li>
             </ul>

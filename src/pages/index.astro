@@ -9,15 +9,15 @@ import Footer from '../components/Footer.jsx';
 
 <BaseLayout>
 	<Header client:load />
-	<main class="space-y-8">
+	<main>
 		<section>
-			<Carousel images={['/img/test.png', '/img/test1.png', '/img/test2.png']} />
+			<Carousel client:load />
 		</section>
 		<section>
 			<History />
 		</section>
 		<section>
-			<LogosCarousel logos={['', '', '']} />
+			<LogosCarousel />
 		</section>
 		<section>
 

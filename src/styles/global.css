@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    cursor: none;
+}
+
+#cursor, #cursor-follower {
+    position: fixed;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+#cursor {
+    width: 40px;
+    height: 40px;
+    background: url('/img/cursor1.webp') no-repeat center center;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+}
+
+#cursor-follower {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(205, 0, 102, 0.2);
+    transform: translate(-50%, -50%);
+    transition: transform 0.15s ease;
+}
+
+a, button, input, textarea, .swiper-button-prev, .swiper-button-next, .swiper-slide  {
+    cursor: none;
+}
+
+@media (hover: none) {
+    body {
+        cursor: default;
+    }
+}

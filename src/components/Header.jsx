@@ -43,13 +43,13 @@ const Header = () => {
             </nav>
             <div className="flex space-x-4">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-rose">
-                <img src="" loading="lazy" alt="Facebook" className="w-8 h-8 mx-auto md:mx-0" /> Facebook
+                <img src="/icon/facebook.webp" loading="lazy" alt="Facebook" className="w-5 h-5 mx-auto md:mx-0" /> 
                 </a>
                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-rose">
-                <img src="" loading="lazy" alt="Instagram" className="w-8 h-8 mx-auto md:mx-0" /> Instagram
+                <img src="/icon/instagram.webp" loading="lazy" alt="Instagram" className="w-5 h-5 mx-auto md:mx-0" /> 
                 </a>
                 <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-rose">
-                <img src="" loading="lazy" alt="LinkedIn" className="w-8 h-8 mx-auto md:mx-0" /> LinkedIn
+                <img src="/icon/linkedin.webp" loading="lazy" alt="LinkedIn" className="w-5 h-5 mx-auto md:mx-0" /> 
                 </a>
                 <div className="md:hidden">
                     <button

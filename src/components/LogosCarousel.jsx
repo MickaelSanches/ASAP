@@ -1,25 +1,56 @@
-import { useEffect, useRef } from 'react';
+import React from 'react';
 
-const LogosCarousel = ({ logos }) => {
-  const carouselRef = useRef(null);
+const logos = [
+  '/brands/bardahl.webp',
+  '/brands/bosch.webp',
+  '/brands/brembo.webp',
+  '/brands/castrol.webp',
+  '/brands/luk.webp',
+  '/brands/magneti.webp',
+  '/brands/mann.webp',
+  '/brands/mobil.webp',
+  '/brands/monroe.webp',
+  '/brands/trw.webp',
+  '/brands/valeo.webp',
+  '/brands/wd.webp',
+];
 
-  useEffect(() => {
-    const scroll = () => {
-      if (carouselRef.current) {
-        carouselRef.current.scrollLeft += 1;
-      }
-    };
-    const intervalId = setInterval(scroll, 20);
-    return () => clearInterval(intervalId);
-  }, []);
-
+const LogosCarousel = () => {
   return (
-    <div className="overflow-x-hidden my-12">
-      <div className="flex" ref={carouselRef}>
+    <div className="w-full overflow-hidden py-4 bg-white">
+      <div className="flex w-[200%] animate-marquee">
         {logos.map((logo, index) => (
-          <img key={index} src={logo} alt={`Logo ${index}`} className="w-32 h-32 object-contain mx-2" />
+          <img
+            key={index}
+            src={logo}
+            alt={`Logo ${index}`}
+            className="h-20 w-auto mx-4 flex-shrink-0"
+          />
+        ))}
+        {logos.map((logo, index) => (
+          <img
+            key={index + logos.length}
+            src={logo}
+            alt={`Logo ${index}`}
+            className="h-20 w-auto mx-4 flex-shrink-0"
+          />
         ))}
       </div>
+      <style>{`
+        @keyframes marquee {
+          0% {
+            transform: translateX(0%);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-marquee {
+          display: flex;
+          width: 200%;
+          animation: marquee 10s linear infinite;
+        }
+      `}</style>
     </div>
   );
 };

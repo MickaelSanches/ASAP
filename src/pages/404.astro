@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.jsx';
+import NotFound from '../components/NotFound';
+import Footer from '../components/Footer.jsx';
+---
+
+<BaseLayout>
+    <Header client:load />
+        <NotFound />
+    <Footer />
+</BaseLayout>
