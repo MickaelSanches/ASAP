@@ -17,7 +17,7 @@ const slides = [
 
 const Carousel = () => {
   return (
-    <div className="bg-black text-white flex justify-center items-center h-screen w-full">
+    <div className="bg-black text-white flex justify-center items-center h-[600px] w-full">
       <Swiper
         grabCursor
         centeredSlides
@@ -48,7 +48,7 @@ const Carousel = () => {
           />
         ))}
       </Swiper>
-      <style jsx>{`
+      <style>{`
         .swiper-button-prev, .swiper-button-next, .swiper-slide {
           cursor: none;
         }
