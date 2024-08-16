@@ -2,10 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Catalogs from '../components/Catalogues.jsx';
 ---
 
 <BaseLayout>
-<main class="bg-gray-800 text-white">
+  <main class="bg-gray-800 text-white">
     <Header />
     <section class="relative bg-gray-800 py-16 flex justify-center items-center">
       <div class="relative text-noir bg-white shadow-lg p-8 w-11/12 max-w-4xl text-center">
@@ -13,20 +14,9 @@ import Footer from '../components/Footer';
         <p class="text-lg mb-8">
           Voici la liste de nos catalogues disponibles en téléchargement :
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="relative bg-gray-200 shadow-lg p-8 text-center rounded-lg">
-            <h3 class="text-xl font-semibold mb-4 text-gray-700">Catalogue Véhicules Légers</h3>
-            <a
-              href="/downloads/vehicules-legers.pdf"
-              class="inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors"
-              download
-            >
-              Télécharger
-            </a>
-          </div>
-        </div>
+        <Catalogs />
       </div>
     </section>
     <Footer />
-</main>
+  </main>
 </BaseLayout>
