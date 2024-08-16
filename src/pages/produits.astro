@@ -1,21 +1,65 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.jsx';
+import DownloadCenter from '../components/DownloadCenter.jsx';
 import Footer from '../components/Footer.jsx';
 ---
 
 <BaseLayout>
   <Header client:load />
   <main class="p-4">
-    <h1 class="text-3xl mb-8">Nos Produits</h1>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <!-- Répétez ce bloc pour chaque produit -->
-      <div class="bg-white shadow-md p-4">
-        <img src="/img/product1.jpg" alt="Produit 1" class="w-full h-64 object-cover mb-4"/>
-        <h2 class="text-2xl">Produit 1</h2>
-        <p>Description du produit 1...</p>
+    <h1 class="text-3xl font-bold mb-8 text-white text-center">Nos Produits</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      
+      <!-- Bloc pour la catégorie Outillages -->
+      <div class="bg-white shadow-md p-3 w-full max-w-md h-[400px] flex flex-col justify-between">
+        <img src="/img/outillages.webp" alt="Outillages" class="w-full h-[220px] object-cover mb-4"/>
+        <h2 class="text-2xl font-semibold mb-2">Outillages</h2>
+        <p class="text-gray-700">
+          Large gamme d'outillages pour vos besoins en atelier : clés, tournevis, marteaux, et plus encore.
+        </p>
       </div>
+
+      <!-- Bloc pour la catégorie Matériels -->
+      <div class="bg-white shadow-md p-3 w-full max-w-md h-[400px] flex flex-col justify-between">
+        <img src="/img/materiels.webp" alt="Matériels" class="w-full h-[220px] object-cover mb-4"/>
+        <h2 class="text-2xl font-semibold mb-2">Matériels</h2>
+        <p class="text-gray-700">
+          Découvrez notre sélection de matériels de garage : ponts élévateurs, équilibreuses, démonte-pneus, et plus encore.
+        </p>
+      </div>
+
+      <!-- Bloc pour la catégorie Consommables -->
+      <div class="bg-white shadow-md p-3 w-full max-w-md h-[400px] flex flex-col justify-between">
+        <img src="/img/consommables.webp" alt="Consommables" class="w-full h-[220px] object-cover mb-4"/>
+        <h2 class="text-2xl font-semibold mb-2">Consommables</h2>
+        <p class="text-gray-700">
+          Tout le nécessaire pour l'entretien de vos équipements : huiles, lubrifiants, produits de nettoyage, etc.
+        </p>
+      </div>
+
+      <!-- Bloc pour la catégorie EPI -->
+      <div class="bg-white shadow-md p-3 w-full max-w-md h-[400px] flex flex-col justify-between">
+        <img src="/img/epi.webp" alt="EPI" class="w-full h-[220px] object-cover mb-4"/>
+        <h2 class="text-2xl font-semibold mb-2">EPI</h2>
+        <p class="text-gray-700">
+          Équipements de Protection Individuelle pour garantir la sécurité dans votre atelier : gants, casques, lunettes, et plus encore.
+        </p>
+      </div>
+
+      <!-- Bloc pour la catégorie Accessoires -->
+      <div class="bg-white shadow-md p-3 w-full max-w-md h-[400px] flex flex-col justify-between">
+        <img src="/img/accessoires.webp" alt="Accessoires" class="w-full h-[220px] object-cover mb-4"/>
+        <h2 class="text-2xl font-semibold mb-2">Accessoires</h2>
+        <p class="text-gray-700">
+          Découvrez notre gamme d'accessoires pour compléter votre équipement de garage.
+        </p>
+      </div>
+
     </div>
   </main>
+  <section>
+    <DownloadCenter />
+  </section>
   <Footer />
 </BaseLayout>
