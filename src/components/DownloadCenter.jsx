@@ -11,7 +11,10 @@ const DownloadCenter = () => {
         <div className="relative flex justify-center items-center">
           <div className="absolute bg-violet shadow-lg p-8 w-full max-w-md text-center transform translate-y-1/2">
             <img src="/img/logo.webp" alt="Catalogues" className="w-full h-auto mb-4" />
-            <div className="btn">
+            <a
+              href="/catalogues"
+              className="btn"
+            >
               <div className="button-wrapper">
                 <div className="text">Télécharger les catalogues</div>
                 <span className="icon">
@@ -35,14 +38,14 @@ const DownloadCenter = () => {
                   </svg>
                 </span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
       <style jsx>{`
         .btn {
           --width: 160px;
-          --height: 48px;
+          --height: 55px;
           --button-color: #000;
           width: var(--width);
           height: var(--height);
@@ -53,7 +56,12 @@ const DownloadCenter = () => {
           font-size: 18px;
           cursor: pointer;
           transition: background 0.3s;
-          margin: 0 auto; /* Centrer le bouton */
+          margin: 0 auto;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
         }
 
         .btn .text {
@@ -70,7 +78,6 @@ const DownloadCenter = () => {
           width: 100%;
           height: 100%;
           left: 0;
-          color: #fff;
         }
 
         .btn .text {
@@ -83,7 +90,6 @@ const DownloadCenter = () => {
         }
 
         .btn .icon {
-          color: #fff;
           top: 100%;
           display: flex;
           align-items: center;
@@ -96,7 +102,7 @@ const DownloadCenter = () => {
         }
 
         .btn:hover {
-          background: #cd0066; /* Couleur de survol rose */
+          background: #cd0066;
         }
 
         .btn:hover .text {
