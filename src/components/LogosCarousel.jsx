@@ -1,56 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const logos = [
-  '/brands/bardahl.webp',
-  '/brands/bosch.webp',
-  '/brands/brembo.webp',
-  '/brands/castrol.webp',
-  '/brands/luk.webp',
-  '/brands/magneti.webp',
-  '/brands/mann.webp',
-  '/brands/mobil.webp',
-  '/brands/monroe.webp',
-  '/brands/trw.webp',
-  '/brands/valeo.webp',
-  '/brands/wd.webp',
+  '/brands/warmup.webp',
+  '/brands/draper.webp',
+  '/brands/ecar.webp',
+  '/brands/efi.webp',
+  '/brands/flex.webp',
+  '/brands/irontek.webp',
+  '/brands/jbm.webp',
+  '/brands/konigstein.webp',
+  '/brands/kt.webp',
+  '/brands/mercator.webp',
+  '/brands/neolux.webp',
+  '/brands/nilfisk.webp',
+  '/brands/omnc.webp',
+  '/brands/paradise.webp',
+  '/brands/proxitech.webp',
+  '/brands/rupes.webp',
+  '/brands/sodise.webp',
+  '/brands/sonax.webp',
+  '/brands/telwin.webp',
 ];
 
 const LogosCarousel = () => {
+  const [scrollSpeed, setScrollSpeed] = useState(10);
+
+  useEffect(() => {
+    // Vérifier si nous sommes bien côté client
+    if (typeof window !== "undefined") {
+      const speed = window.innerWidth < 640 ? 20 : 10;
+      setScrollSpeed(speed);
+    }
+  }, []);
+
   return (
-    <div className="w-full overflow-hidden py-4 bg-white">
-      <div className="flex w-[200%] animate-marquee">
-        {logos.map((logo, index) => (
+    <div className="w-full overflow-hidden py-4 bg-gray-500">
+      <marquee behavior="scroll" direction="left" scrollamount={scrollSpeed} className="marquee">
+        {logos.concat(logos).map((logo, index) => (
           <img
             key={index}
             src={logo}
             alt={`Logo ${index}`}
-            className="h-20 w-auto mx-4 flex-shrink-0"
+            className="h-20 w-auto mx-4 inline-block"
           />
         ))}
-        {logos.map((logo, index) => (
-          <img
-            key={index + logos.length}
-            src={logo}
-            alt={`Logo ${index}`}
-            className="h-20 w-auto mx-4 flex-shrink-0"
-          />
-        ))}
-      </div>
-      <style>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(0%);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-marquee {
-          display: flex;
-          width: 200%;
-          animation: marquee 10s linear infinite;
-        }
-      `}</style>
+      </marquee>
     </div>
   );
 };
