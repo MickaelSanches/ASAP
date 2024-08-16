@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
+---
+
+<BaseLayout>
+  <Header client:load />
+  <main class="p-8 text-white">
+    <h1 class="text-4xl font-bold mb-8 text-center">Mentions Légales & Conditions Générales de Vente</h1>
+    
+    <section class="mb-12">
+      <h2 class="text-3xl text-violet  font-semibold mb-4">Mentions Légales</h2>
+      <p class="mb-4">Ce site est édité par la société ASAP – ALPES SOLUTIONS AUTO PRO, SARL au capital de 5000 euros, immatriculée au Registre du Commerce et des Sociétés sous le N° 985 340 306, dont le siège social est situé au 140 Boulevard du Dr Jean Jules Herbert, 73100 Aix-les-Bains. Numéro de téléphone : 04.81.91.09.49. Email : alpessolutionsautopro@gmail.com.</p>
+      <p class="mb-4">Directeurs de la publication : Christophe Chiocchio et Freddy Voiron.</p>
+      <p class="mb-4">Le site est hébergé par Vercel Inc., située au 340 S Lemon Ave #4133, Walnut, CA 91789, USA.</p>
+      <p class="mb-4">
+        Ce site a été conçu et réalisé par 
+        <a href="https://www.instagram.com/innovpower" target="_blank" rel="noopener noreferrer" class="text-rose hover:text-violet">InnovPower Agency</a>, 
+        représentée par 
+        <a href="https://mickaelsanchesloureiro.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-rose hover:text-violet">Mickael Sanches Loureiro</a>.
+      </p>
+      <p class="mb-4">Le contenu de ce site est protégé par la législation sur le droit d'auteur et la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de la société ASAP – ALPES SOLUTIONS AUTO PRO.</p>
+    </section>
+
+    <section>
+      <h2 class="text-3xl text-violet  font-semibold mb-4">Conditions Générales de Vente (CGV)</h2>
+      <article class="prose prose-lg">
+        <h3 class="text-2xl font-semibold mb-2">1. Introduction</h3>
+        <p>Les présentes Conditions Générales de Vente (CGV) s’appliquent à toutes commandes passées par un acheteur professionnel (ci-après dénommé « le Client ») pour les besoins de son activité professionnelle auprès de la Société ASAP – ALPES SOLUTIONS AUTO PRO (RCS N°985340306) (ci-après dénommée « le Vendeur »).</p>
+
+        <h3 class="text-2xl text-rose  font-semibold mb-2">2. Ouverture de Compte Client « Professionnel » et Commandes</h3>
+        <p>Avant toute première commande auprès du Vendeur, le Client doit avoir finalisé les démarches d’ouverture de son compte client professionnel. Il doit avoir retourné au Vendeur sa demande d’ouverture de compte remplie et signée accompagnée de ses pièces jointes. En créant son compte, le Client s’engage à fournir des informations exactes, complètes et à tenir à jour régulièrement toutes les données communiquées.</p>
+        <p>Le compte est validé par le Vendeur sous 2 jours ouvrés et le Client peut alors valablement passer commande :</p>
+        <ul class="list-disc ml-8">
+          <li>Par téléphone au 04.81.91.09.49 aux jours et heures d’ouverture indiqués sur le site internet et dans la limite d’un montant total de 150 euros TTC par commande ; à défaut, la commande doit être adressée au Vendeur par tout support écrit.</li>
+          <li>Par courriel à l’adresse suivante : alpessolutionsautopro@gmail.com. Le Client indique au Vendeur l’objet souhaité, si possible avec la référence et la quantité désirée.</li>
+          <li>Sur place au comptoir dans les locaux situés au 140 Boulevard du Dr Jean Jules Herbert, 73100 Aix-les-Bains.</li>
+        </ul>
+
+        <h3 class="text-2xl text-rose  font-semibold mb-2">3. Prix de Vente</h3>
+        <p>Les prix sont facturés sur la base des tarifs en vigueur au jour de la validation de la commande et tiennent compte des éventuelles conditions particulières accordées par le Vendeur au Client au moment de la commande.</p>
+        <p>Les prix sont stipulés en euros, toutes taxes comprises, avec précision du taux de TVA en vigueur.</p>
+
+        <h3 class="text-2xl text-rose  font-semibold mb-2">4. Produits</h3>
+        <p>Le choix et l'achat d'un Produit est de la seule responsabilité du Client. Les produits sont proposés dans la limite des stocks disponibles chez le Fabricant. Les produits sont décrits et présentés avec la plus grande exactitude possible.</p>
+
+        <h3 class="text-2xl text-rose  font-semibold mb-2">5. Livraison</h3>
+        <p>Le Client devra indiquer au moment de sa commande l’adresse à laquelle le bien doit être livré sous réserve que cette adresse soit réelle et accessible.</p>
+
+        <h3 class="text-2xl text-rose  font-semibold mb-2">6. Transport et Transfert des Risques</h3>
+        <p>Le transfert au Client des risques de perte et de détérioration des biens vendus ainsi que des dommages qu'ils pourraient occasionner s’effectue dès la livraison, et ce nonobstant la clause de réserve de propriété ci-après.</p>
+
+        <h3 class="text-2xl text-rose  font-semibold mb-2">7. Responsabilité et Force Majeure</h3>
+        <p>Le Vendeur ne saurait être tenu responsable de toute inexécution ou mauvaise exécution contractuelle qui serait imputable au Client. De même, le Vendeur ne saurait engager sa responsabilité en cas d’inexécution ou de mauvaise exécution de ses obligations contractuelles qui aurait pour origine un cas de force majeure au sens de l’article 1218 du Code civil.</p>
+
+        <h3 class="text-2xl text-rose  font-semibold mb-2">8. Modalités de Règlement</h3>
+        <p>L’obligation principale du Client est de régler ses commandes aux échéances convenues.</p>
+        <p>Sauf conditions particulières, toutes les factures sont payables par mandat de prélèvement dans un délai de 30 jours.</p>
+
+        <h3 class="text-2xl  text-rose font-semibold mb-2">9. Garanties</h3>
+        <p>Sauf dispositions particulières, outre les garanties légales, les produits vendus bénéficient d’une garantie commerciale d’une durée de 12 mois à compter de la livraison de la commande.</p>
+
+        <h3 class="text-2xl font-semibold text-rose mb-2">10. Réserve de Propriété</h3>
+        <p>Le Vendeur conserve l’entière propriété du matériel livré jusqu’à encaissement effectif et intégral du prix facturé.</p>
+
+        <h3 class="text-2xl text-rose font-semibold mb-2">11. Juridiction Compétente</h3>
+        <p>Tous les litiges relatifs à l'interprétation et à l'exécution des présentes CGV et plus généralement à une commande de Produits au Vendeur ou ses conséquences sont soumis au droit français et sont de la compétence exclusive du Tribunal de commerce de CHAMBERY.</p>
+
+        <h3 class="text-2xl text-rose font-semibold mb-2">12. Protection des Données Personnelles</h3>
+        <p>Les informations personnelles communiquées par le Client sont enregistrées par le Vendeur dans un fichier informatisé.</p>
+
+        <h3 class="text-2xl text-rose font-semibold mb-2">13. Clause de Résolution Amicable</h3>
+        <p>Sous peine d’irrecevabilité, le Client et le Vendeur devront préalablement à toute saisine d’un juge justifier avoir tenté une démarche de résolution amiable de leurs différends.</p>
+      </article>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
