@@ -8,7 +8,7 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-noir text-white p-2 flex justify-between items-center z-50 relative">
+        <header className="bg-noir text-white p-2 lg:px-16 flex justify-between items-center z-50 relative">
             <a href="/">
                 <img
                     src="/img/logotransparent.webp"
