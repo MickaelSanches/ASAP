@@ -54,7 +54,7 @@ const DownloadCenter = () => {
           text-align: center;
           font-family: inherit;
           font-size: 18px;
-          cursor: pointer;
+          cursor: none;
           transition: background 0.3s;
           margin: 0 auto;
           color: #fff;
