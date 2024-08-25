@@ -2,7 +2,7 @@ import React from 'react';
 
 const DownloadCenter = () => {
   return (
-    <section className="relative bg-gray-800 py-16 flex justify-center items-center">
+    <section className="relative mb-72 bg-gray-800 py-16 flex justify-center items-center">
       <div className="relative bg-white shadow-lg p-8 w-11/12 max-w-4xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">CENTRE DE TÉLÉCHARGEMENT</h2>
         <p className="text-lg mb-8">

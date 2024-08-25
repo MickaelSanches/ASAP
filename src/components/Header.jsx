@@ -14,7 +14,7 @@ const Header = () => {
                     src="/img/logotransparent.webp"
                     alt="Logo de ASAP"
                     id="accueil-logo"
-                    className="w-40 h-auto"
+                    className="w-52 h-auto"
                 />
             </a>
             <nav className="hidden md:flex space-x-4 text-white text-sm mx-auto">
