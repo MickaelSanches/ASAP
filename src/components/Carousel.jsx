@@ -11,7 +11,8 @@ const slides = [
   "/img/c4.webp",
   "/img/c5.webp",
   "/img/c6.webp",
-  "/img/c7.webpg",
+  "/img/c7.webp",
+  "/img/c8.webp",
 ];
 
 const Carousel = () => {
@@ -39,7 +40,8 @@ const Carousel = () => {
             style={{
               backgroundImage: `url(${slide})`,
               backgroundPosition: "center",
-              backgroundSize: "cover",
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
               width: "300px",
               height: "300px",
               WebkitBoxReflect: "below 1px linear-gradient(transparent, transparent, #0006)",

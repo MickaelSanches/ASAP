@@ -20,6 +20,8 @@ const logos = [
   '/brands/sodise.webp',
   '/brands/sonax.webp',
   '/brands/telwin.webp',
+  '/brands/autel.webp',
+  '/brands/oclair.webp',
 ];
 
 const LogosCarousel = () => {
