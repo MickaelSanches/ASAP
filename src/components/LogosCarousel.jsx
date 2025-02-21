@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 const logos = [
+  '/brands/sonic.webp',
+  '/brands/provac.webp',
   '/brands/warmup.webp',
   '/brands/draper.webp',
   '/brands/ecar.webp',
