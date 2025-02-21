@@ -37,8 +37,8 @@ const Footer = () => {
         <div>
             <h4 className="tracking-wider text-xl mb-4">LOCALISATION</h4>
             <div className="container mx-auto mt-8">
-            <p>140 Boulevard du Dr Jean Jules Herbert</p>
-            <p>73100 Aix-les-bains</p>
+            <p>117 Allée des Érables</p>
+            <p>73420 Drumettaz Clarafond</p>
             <p>04 81 91 09 49</p>
             </div>
         </div>
