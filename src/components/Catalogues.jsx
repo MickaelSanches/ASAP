@@ -1,7 +1,12 @@
 import React from 'react';
 
 const catalogs = [
-  { name: 'Catalogue Promo ASAP', url: 'https://drive.google.com/file/d/1oZjnRTl5nyS_QnkFQ0bPxe2cz3KjuUFn/view?usp=drive_link', viewerUrl: '/catalogues/promo-asap' },
+  { name: 'Catalogue Promo ASAP', url: 'https://drive.google.com/file/d/1h2vh7Wrqo9h8WIkWHRe9SAO6uoBeovIU/view?usp=drive_link', viewerUrl: '/catalogues/promo-asap' },
+  { name: 'Catalogue Sonic Global Bestsellers 2025', url: 'https://drive.google.com/file/d/1XId-pF8zjlVQ2OGQSPT6gG-igD7C5ung/view?usp=drive_link', viewerUrl: '/catalogues/promo-asap' },
+  { name: 'Catalogue Sonic 2024/2025', url: 'https://drive.google.com/file/d/1RmXWJ8UEQFwFjm1HFtg1-2tEuVOvAacb/view?usp=drive_link', viewerUrl: '/catalogues/promo-asap' },
+  { name: 'Catalogue Provac Hunter Équipements dédiés', url: 'https://drive.google.com/file/d/15tuI8CXf_oWlHoqCPETOcucwqqL1_2SD/view?usp=drive_link', viewerUrl: '/catalogues/promo-asap' },
+  { name: 'Catalogue Provac Monte/Démonte-Pneus', url: 'https://drive.google.com/file/d/1k-YWHM4d4ooLnd-FX5yFrLIUpnoGHc50/view?usp=drive_link', viewerUrl: '/catalogues/promo-asap' },
+  { name: 'Catalogue Provac Hunter VAG', url: 'https://drive.google.com/file/d/1aP61gSz2YDDc4nlE9ZOOF944v2qJy7d9/view?usp=drive_link', viewerUrl: '/catalogues/promo-asap' },
   { name: 'Catalogue KingTony', url: 'https://drive.google.com/file/d/16wA0FHwFNZabjB7OTIQtTcrTmCaAohca/view?usp=drive_link', viewerUrl: '/catalogues/king-tony' },
   { name: 'Catalogue FLEX Best Of 2024', url: 'https://drive.google.com/file/d/1eXM0iL5ibKgFa8-QHiOzC7eRg-CrtJX7/view?usp=drive_link', viewerUrl: '/catalogues/flex-bestof' },
   { name: 'Catalogue FLEX', url: 'https://drive.google.com/file/d/1Lj7_s9EKPk1d1qXL_c6KqI9mps-kq5hY/view?usp=drive_link', viewerUrl: '/catalogues/flex' },
