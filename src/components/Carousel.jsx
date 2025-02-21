@@ -5,6 +5,10 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 
 const slides = [
+  "/img/controleur.webp",
+  "/img/equilibreuse.webp",
+  "/img/monte-demonte.webp",
+  "/img/servante.webp",
   "/img/c1.webp",
   "/img/c2.webp",
   "/img/c3.webp",
